@@ -6,6 +6,6 @@ engine.setProperty('voice', voice.id)
 
 engine.say('Je lui ai dit, fait gaffe a ton nez') # perfect
 
-engine.say('Tu as bien mangé?') # it works!!
+#engine.say('Tu as bien mangé?') # it works!!
 
 engine.runAndWait()    
