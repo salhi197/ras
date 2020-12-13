@@ -1,11 +1,4 @@
-# -*- coding: utf8 -*
 import pyttsx3
 engine = pyttsx3.init()
-voice = engine.getProperty('voices')[0] # the french voice
-engine.setProperty('voice', voice.id)
-
-engine.say(u'56') # perfect
-
-#engine.say('Tu as bien mangé?') # it works!!
-
-engine.runAndWait()    
+engine.say("Sac à merde. Je sais que tu te tapes ma femme. Je ne vais donc pas prévoir de catégorie Mathématiques à mes récompenses. Signé : Monsieur Nobel.")
+engine.runAndWait()
