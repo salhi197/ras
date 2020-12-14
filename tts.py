@@ -1,5 +1,5 @@
 import os
-cmd_beg = 'espeak '
+cmd_beg = 'sudo espeak '
 speed = 120
 
 ticket  = input('Entrer le numero de ticket : ') 
