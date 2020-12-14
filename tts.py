@@ -4,7 +4,7 @@ speed = 120
 ticket  = input('Entrer le numero de ticket : ') 
 #f  = input('frequence : ') 
 # text    = "ticket numero"+ticket+" va au gichet "+gichet
-command = '-vfr+f'+str(f)+' -z -a50 -s120 "ff on apelle le ticket numero  '+str(ticket)+'"'
+command = '-vfr+f3 -z -a50 -s120 "ff on apelle le ticket numero  '+str(ticket)+'"'
 os.system(cmd_beg+command) 
 # from num2word import num2words
 # from subspaces import call
