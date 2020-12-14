@@ -3,7 +3,8 @@ cmd_beg = 'espeak '
 speed = 120
 ticket  = input('Entrer le numero de ticket : ') 
 # text    = "ticket numero"+ticket+" va au gichet "+gichet
-os.system(cmd_beg+'-vfr+f4 -s'+speed+' "ff le ticket numero    '+str(ticket)+'"') 
+command = '-vfr+f4 -s'+str(speed)+' "ff le ticket numero    '+str(ticket)+'"'
+os.system(cmd_beg+command) 
 # from num2word import num2words
 # from subspaces import call
 # cmd_beg = 'espeak '
