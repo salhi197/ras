@@ -1,5 +1,6 @@
 import socket
 import serial
+import os
 from time import sleep
 #   apt-get install mpg321
 
@@ -26,9 +27,9 @@ while True:
             data = conn.recv(1024)
             p=data.decode('utf-8')
             # get all audios 
-            audios = os.listdir('./audios')
+            audios = os.listdir('./test_audios')
             audio_file_name = audios[p]
-            audio_file = "/audios/"+audio_file_name
+            audio_file = ";/audios/"+audio_file_name
             cmd = 'mpg321 '+audio_file+' &'
             os.system(cmd)
             # entrer le code dans l espace en haut
