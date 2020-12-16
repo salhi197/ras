@@ -3,6 +3,7 @@ import serial
 import os
 from time import sleep
 #   apt-get install mpg321
+from pygame import mixer  # Load the popular external library
 
 ser = serial.Serial(
                         port='/dev/serial0',
@@ -29,9 +30,12 @@ while True:
             # get all audios 
             audios = os.listdir('./test_audios')
             audio_file_name = audios[p]
-            audio_file = ";/audios/"+audio_file_name
-            cmd = 'mpg321 '+audio_file+' &'
-            os.system(cmd)
+            audio_file = "/audios/"+audio_file_name
+            mixer.init()
+            mixer.music.load(audio_file)
+            mixer.music.play()
+            # cmd = 'mpg321 '+audio_file+' &'
+            # os.system(cmd)
             # entrer le code dans l espace en haut
             #print(data)
             #print(type(data))
