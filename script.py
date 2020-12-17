@@ -6,13 +6,13 @@ from time import sleep
 from pygame import mixer  # Load the popular external library
 
 ser = serial.Serial(
-                        port='/dev/serial0',
-                        baudrate = 115200,
-                        parity=serial.PARITY_NONE,
-                        stopbits=serial.STOPBITS_ONE,
-                        bytesize=serial.EIGHTBITS,
-                        timeout=1
-                )
+        port='/dev/serial0',
+        baudrate = 115200,
+        parity=serial.PARITY_NONE,
+        stopbits=serial.STOPBITS_ONE,
+        bytesize=serial.EIGHTBITS,
+        timeout=1
+    )
 
 print("yooooooooooooo")
 HOST = '192.168.8.200'                 # Symbolic name meaning all available in$
